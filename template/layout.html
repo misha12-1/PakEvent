@@ -1,0 +1,213 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="icon" href="{{ url_for('static',filename='images/favicon3.png')}}"/>
+         <title>Pak Event</title>
+ 
+         <!-- Bootstrap core CSS -->
+         <link href="{{ url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+         <link href="{{ url_for('static',filename='font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+         <!-- Custom styles for this template -->
+         <link href="{{ url_for('static',filename='css/style.css')}}" rel="stylesheet">
+         <link href="{{ url_for('static',filename='css/style1.css')}}" rel="stylesheet">
+         <link href="{{ url_for('static',filename='fonts/antonio-exotic/stylesheet.css')}}" rel="stylesheet">
+         <link rel="stylesheet" href="{{ url_for('static',filename='css/lightbox.min.css')}}">
+         <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/swiper.min.css')}}">
+         <link href="{{ url_for('static',filename='css/responsive.css')}}" rel="stylesheet">
+         <script src="{{ url_for('static',filename='js/jquery.min.js')}}" type="text/javascript"></script>
+         <script src="{{ url_for('static',filename='js/bootstrap.min.js')}}" type="text/javascript"></script>
+         <script src="{{ url_for('static',filename='js/lightbox-plus-jquery.min.js')}}" type="text/javascript"></script>
+         <script src="{{ url_for('static',filename='js/instafeed.min.js')}}" type="text/javascript"></script>
+         <script src="{{ url_for('static',filename='js/custom.js')}}" type="text/javascript"></script>
+         
+
+     </head>
+     <body>
+         <div id="page">
+             <!---header top---->
+             <div class="top-header">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-md-6">
+                             <!-- <a href="#"> </a>
+                                 <div class="info-block"><i class="fa fa-map"></i>701 Old York Drive Richmond USA.</div>-->
+                         </div>
+                         <div class="col-md-6">
+                             <div class="social-grid">
+                                 <ul class="list-unstyled text-right">
+                                    <li><a><i class="fa fa-facebook"></i></a></li>
+                                    <li><a><i class="fa fa-twitter"></i></a></li>
+                                    <li><a><i class="fa fa-instagram"></i></a></li>
+                                     <li><a href="/LoGIn"><i class="fa fa-lock" aria-hidden="true"></i>
+                                         LogIn/SignUp</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </d
+                     iv>
+                 </div>
+             </div>
+             <!--header--->
+             <header class="header-container">
+                 <div class="container">
+                     <div class="top-row">
+                         <div class="row">
+                             <div class="col-md-2 col-sm-6 col-xs-6">
+                                 <div id="logo">
+                                     <!--<a href="home.html"><img src="images/Pak logo2.png"  alt="logo"></a>-->
+                                     <a href="/home"><span>Pak</span>Event</a>
+                                 </div>                       
+                             </div>
+                             <div class="col-sm-6 visible-sm">
+                                 <div class="text-right"><button type="button" class="book-now-btn">Book Now</button></div>
+                             </div>
+                             <div class="col-md-8 col-sm-12 col-xs-12 remove-padd">
+                                 <nav class="navbar navbar-default">
+                                     <div class="navbar-header page-scroll">
+                                         <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                                             <span class="sr-only">Toggle navigation</span>
+                                             <span class="icon-bar"></span>
+                                             <span class="icon-bar"></span>
+                                             <span class="icon-bar"></span>
+                                         </button>
+                                     </div>
+                                     <div class="collapse navigation navbar-collapse navbar-ex1-collapse remove-space">
+                                         <ul class="list-unstyled nav1 cl-effect-10">
+                                             <li><a  data-hover="Home" class="active" href="/home"><span>Home</span></a></li>
+                                             <li class="dropdown"><a data-hover="Events" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="/events"><span>Events</span></a>
+                                                 <div class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink" style="text-align: center;">
+                                                     <a class="dropdown-item" href="/wedding">Wedding</a><br>
+                                                     <a class="dropdown-item" href="/birthday">Birthday</a><br>
+                                                     <a class="dropdown-item" href="#">Others...</a>
+                                                 </div></li>
+                                             <li><a data-hover="Gallery"  href="/gallery"><span>Gallery</span></a></li>
+                                             <li><a data-hover="About Us"  href="/about"><span>About Us</span></a></li>
+                                             <li><a data-hover="Contact Us"  href="/contact"><span>Contact Us</span></a></li>
+                                         </ul>
+                                     </div>
+                                 </nav>
+                             </div>
+                             <div class="col-md-2  col-sm-4 col-xs-12 hidden-sm">
+                                 <div class="text-right"><a href="/booking"><button type="button" class="book-now-btn">Booking</button></a></div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </header>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+{% block body %}
+{% endblock %}
+ 
+ <!---footer--->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 width-set-50">
+                            <div class="footer-details">
+                                <h4>Get in touch</h4>
+                                <ul class="list-unstyled footer-contact-list">
+                                    <li>
+                                        <i class="fa fa-map-marker fa-lg"></i>
+                                        <p>701 Gulberg III LAhore.</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-phone fa-lg"></i>
+                                        <p><a href="tel:+9 304 4660438"> +9 304 4660438</a></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope-o fa-lg"></i>
+                                        <p><a href="mailto:zam@gmail.com">zam@gmail.com</a></p>
+                                    </li>
+                                </ul>
+                                <div class="footer-social-icon">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>                           
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                                <div class="input-group" id="subscribe">
+                                    <input type="text" class="form-control subscribe-box" value="" name="subscribe" placeholder="EMAIL ID">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn subscribe-button"><i class="fa fa-paper-plane fa-lg"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 width-50 width-set-50">
+                            <div class="footer-details">
+                                <h4>explore</h4>
+                                <ul class="list-unstyled footer-links">
+                                    <li class="active"><a>Home</a></li>
+                                    <li><a href="/events">Events</a></li>
+                                    <li><a href="/gallery.html">Gallery</a></li>
+                                    <li><a href="/aboutus.html">About Us</a></li>
+                                    <li><a href="/contactus.html">Contact Us</a></li>
+                                    <li> <a href="LoGIn.html">Log In / Sign Up</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="footer-details">
+                                <h4>Now On Instagram</h4>
+                                <div class="row">
+                                    <div class="instagram-images">
+                                        <div id="instafeed">
+                                            <img style="width: 60px;height: 60px; padding-right: 5px" src="{{ url_for('static',filename='images/ban1.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/ban2.jpeg')}}">
+                                            <img style="width: 60px;height: 60px ;padding-right: 5px" src="{{ url_for('static',filename='images/ban3.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/ban4.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/ban5.jpeg')}}">
+                                        </div>
+                                        <div id="instafeed" style="padding-top: 7px">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/ban8.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/ban9.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/ad2.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy4.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy3.jpeg')}}">
+                                        </div>
+                                        <div id="instafeed" style="padding-top: 7px">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy19.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy20.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy22.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy21.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy11.jpeg')}}">
+                                        </div>
+                                        <div id="instafeed" style="padding-top: 7px">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy13.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy14.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy15.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy16.jpeg')}}">
+                                            <img style="width: 60px;height: 60px;padding-right: 5px" src="{{ url_for('static',filename='images/bdy17.jpeg')}}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        Pak Event &copy; 2020 All right reserved. 
+                    </div>
+                </div>
+            </footer>
+
+            <!--back to top--->
+            <a style="display: none;" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
+                <span><i aria-hidden="true" class="fa fa-angle-up fa-lg"></i></span>
+                <span>Top</span>
+            </a>
+
+        </div>
+    </body>
+</html>
